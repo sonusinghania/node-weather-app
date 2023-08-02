@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/styles.css"> <!-- Corrected the path to the CSS file -->
+   <!-- Corrected the path to the JavaScript file -->
+</head>
+<body>
+    <div class="main-content">
+   {{>header}} <!-- Corrected 'Title' to 'title' for Handlebars template variable -->
+   <p> Use this site to get Your Weather</p>
+   <form>
+    <input placeholder="Location">
+    <button>Search</button>
+</form>
+
+<p id="message-1"></p>
+<p id="message-2"></p>
+   </div>
+    {{!-- <p>founded by {{name}}</p> --}}
+
+     {{>footer}}
+       <script src="./Js/app.js"></script>
+</body>
+</html>
